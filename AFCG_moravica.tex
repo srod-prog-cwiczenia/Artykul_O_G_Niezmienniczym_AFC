@@ -1,0 +1,1065 @@
+\markboth{A.Nowik}
+{On G - transitive version of always of the first category sets}
+
+\begin{document}
+
+{\parindent 12cm
+\underline{\small SET THEORY}
+}
+
+\begin{center}{\bf \large
+On G - transitive version of always of the first category sets.
+}
+\end{center}
+\smallskip
+\begin{center}
+by
+\end{center}
+\smallskip
+\begin{center}{\large Andrzej Nowik }
+\end{center}
+\bigskip
+\begin{abstract}
+
+  We study the $G-$ invariant version of always of
+the first category sets.
+  This notion is a generalization of the notion of
+$\afcp$ sets.
+
+\footnotetext[1]{
+2000 {Mathematics Subject Classification:} Primary 03E15;
+Secondary 03E20, 28E15.
+}
+
+\footnotetext[1]{
+  Key words: Always first category sets, strongly meager sets,
+WQN sets, $AFC^{\prime}$ sets.
+}
+\end{abstract}
+
+\bigskip
+\bigskip
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% The bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{10}
+
+\bibitem[BJ]{BJ} T. Bartoszy\'nski, H. Judah, {\it Set Theory: on the
+strucure of the real line}, A. K. Peters, Wellesley, Mass., 1995.
+
+\bibitem[N]{N}
+A. Nowik
+{\em Remarks about transitive version of perfectly
+meager sets,}
+{\bf Real Analysis Exchange} 22(1) (1996/97) 406 - 412.
+
+\bibitem[NSW]{NSW}
+A. Nowik, M. Scheepers, T. Weiss.
+{\em The algebraic sum of sets of
+    real numbers with strong measure zero sets,}
+{\bf Journal of Symbolic Logic} vol. 63(1), 1998, 301 - 324.
+
+\bibitem[NW1]{NW1}
+A. Nowik, T. Weiss
+{\em Not every Q - set is perfectly meager in the transitive sense.}
+{\bf Proceedings of The American Mathematical Society} 128(496), No 10
+(October 2000), 3017 - 3024.
+
+\bibitem[NW2]{NW2}
+A. Nowik, T. Weiss
+{\em Not every Q - set is perfectly meager in the transitive sense.}
+{\bf Proceedings of The American Mathematical Society} 128(496), No 10
+(October 2000), 3017 - 3024.
+
+\bibitem[P]{P}
+J. Pawlikowski, {\em All Sierpi\'nski sets are strongly
+meager}, 1992, {\bf Arch. Mat. Logic} 35 (1996) 281 -- 285.
+
+\bibitem[Si]{Si}
+W. Sierpi\'nski, {\em Sur l'hypoth\`{e}se du continu 
+($2^{\aleph_0} = \aleph_1$)}, {\bf Fundamenta Mathematicae}, 5 (1)
+(1924), 177–187
+
+\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%% My address and additional informations %%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\flushleft{{\sl Permanent address:}} \\
+University of Gda\'nsk \\
+Institute of Mathematics \\
+Wita Stwosza 57 \\
+80 -- 952 Gda\'nsk \\
+Poland\\
+e-mail: andrzej.nowik@ug.gda.pl
+\end{center}
+
+\begin{center}
+%%%Last update of source: February 8, 2001.
+\today
+\end{center}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% Mathematica Moravica document template %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[b5cutpaper, twoside, 11pt, leqno]{moravica}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=1.95cm, top=1.75cm, bottom=1.75cm, right=1.95cm, nofoot]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+
+% allow equation break from page to page
+\allowdisplaybreaks
+
+\usepackage[absolute]{textpos}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RO,RE,LO,LE, CO, CE]{}
+\fancyfoot{}
+
+\fancyhead[RO]{\footnotesize{\thepage}}
+\fancyhead[LE]{\footnotesize{\thepage}}
+\fancyhead[CE]{\footnotesize\textsc{\rightmark}}
+\fancyhead[CO]{\footnotesize\textsc{\leftmark}}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\footskip=0cm
+\headheight=15pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Defining Length of the Address box%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\alength}
+\setlength{\alength}{10cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Mathematica Moravica Logo %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\nlto}{n < \omega}
+\newcommand{\eps}{\epsilon}
+\newcommand{\epzero}{\eps > 0}
+\newcommand{\gd}{G_{\delta}}
+
+%\def\perf{Perf(\cantor)}
+
+\newcommand{\afcp}{{\mathbf AFC}^\prime}
+\newcommand\afcstar{AFC^*_{G}}
+\newcommand\afcg{\afcp_{G}}
+\newcommand\trans{{\it Trans}(\ca)}
+\newcommand\ooo{\underline{O}}
+\newcommand{\square}{\hbox{\ \ \ \ \ \vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
+\newcommand{\eee}{{\cal E}}
+\newcommand{\seq}{\subseteq}
+\newcommand{\ca}{2^{\omega}}
+\newcommand{\afcbar}{\overline{AFC}}
+\newcommand{\arr}{\rightarrow}
+\newcommand{\Arr}{\Rightarrow}
+\newcommand{\afc}{AFC}
+\newcommand{\mgr}{{\cal M}}
+\newcommand{\neglig}{{\cal N}}
+\newcommand{\oo}{\omega}
+\newcommand{\qed}{\sharp}
+%%%\newcommand{\int}{\hbox{\it int}}
+\newcommand{\finsub}{[\oo]^{<\oo}}
+\newcommand{\infsub}{[\oo]^{\oo}}
+\newcommand{\incr}{\oo^{\uparrow \oo }}
+\newcommand{\baire}{\oo^{\oo}}
+\newcommand{\up}{\uparrow}
+\newcommand{\real}{\bf R}
+\newcommand{\perf}{{\it Perf}}
+
+
+\newcommand{\fsigma}{{\sf F}_{\sigma}}
+\newcommand{\gdelta}{{\sf G}_{\delta}}
+
+%%%% Cardinal coefficients
+\newcommand{\cof}{{\it cof}}
+\newcommand{\cov}{{\it cov}}
+\newcommand{\non}{{\it non}}
+
+\newcommand{\cantor}{\ca}
+\newcommand{\ucrz}{UCR_0}
+\newcommand{\borelucrz}{Borel-UCR_0}
+\newcommand{\Bor}{{\it Bor}}
+\newcommand{\proof}{\flushleft{ \sc Proof. } \\ }
+\newcommand{\restriction}{{\hbox{$\,|\grave{}\,$}}}
+\newcommand{\szerod}{(s^2_0)}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\Part}{{\it Part}}
+\newcommand{\homeomorphic}{\approx}
+\newcommand{\Perf}{{\mathrm Perf}}
+\newcommand{\calB}{{\cal B}}
+\newcommand{\calF}{{\mathcal{F}}}
+\newcommand{\cF}{\calF}
+\newcommand{\calG}{{\cal G}}
+\newcommand{\cG}{\calG}
+\newcommand{\calI}{{\cal I}}
+\newcommand{\calM}{{\cal M}}
+\newcommand{\meager}{\mathcal{M}}
+\newcommand{\Even}{\hbox{\rm \tiny Even}}
+\newcommand{\Odd}{\hbox{\rm \tiny Odd}}
+\newcommand{\minideal}{${\cal F}_{\hbox{\rm \scriptsize min}}(\neg D)\;$}
+\newcommand{\dom}{{\rm dom}}
+\newcommand\Hom{{\rm Hom(\ca)}}
+\newcommand{\cf}{{\rm cf}}
+
+\newcommand{\gameonideal}{{\cal G}_\calI^{\it Tree}}
+\newcommand{\treeproperty}{{P}^{\it Tree}}
+
+\newcommand{\blacksquare}{\begin{flushright} \rule{2mm}{2mm} \end{flushright}}
+
+
+\def\volinfo{\textsc{Vol.} \textbf{\currentvolume}, No. \textbf{\currentissue}}
+\def\publname{Mathematica Moravica}
+\def\copyrightyear{2019}
+\def\copyrightholder{Mathematica Moravica}
+\def\currentvolume{23}
+\def\currentmonth{}
+\def\currentyear{2019}
+\def\currentissue{2}
+\pagespan{1}{12}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%Here authors can define environments and their numbering schemes.
+%Authors should add environments that are to be used in the paper
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{lemma}{Lemma}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Authors can also define custom functions or macros to make typing of frequently used complicated expressions easier.
+%
+\newcommand\dd{\mathbf{d}}     %to be used ONLY within math environment.
+%\newcommand\im{\mathrm{Im}}    %Imaginary part using ordinary upright font
+%\DeclareMathOperator{\real}{\mathrm{Re}}
+%
+%Another way to achieve the result similar to the previous case,
+%but this one looks more natural when typeset (because of small space after it).
+%One can define more complicated functions, as for example
+%
+%\newcommand{\binsq}[2]{\displaystyle{\genfrac{[}{]}{0pt}{}{#1}{#2}}}
+%
+%which looks like binary operator, but with square brackets instead of ordinary ones
+
+
+\begin{document}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%and use \symbolfootnote[1]{footnote} to get an *
+%and use \symbolfootnote[0]{footnote} to get footnote without any symbol
+%and use \symbolfootnote[2]{footnote} to get a dagger
+%and use \symbolfootnote[3]{footnote} to get a double dagger
+
+
+
+\title[Here goes short title intended for headers if full title is too long]
+{Here goes the Title of the paper. One can use line breaks \\
+to get a more natura look of the Title}
+
+\author[Short names, if too many authors to fit in the header]{Author's Name$^{\ast}$}
+%\ast is used as a reference sign for some information related to the paper,
+%which will be put in the footnote of the first page (like research support information).
+%If no such information is provided, \ast command can be removed.
+\address{Faculty of Technical Sciences, \newline
+Svetog Save 65, \newline
+32000 \v{C}a\v{c}ak \newline
+Serbia}
+\email{mmoravica@gmail.rs}
+
+%If there are more than one author, \author, \adress and \email commands should be repeated here with
+%appropriate information
+
+\date{}
+\subjclass[2010]{Primary: 40B05; Secondary: 33E99}
+\keywords{keywords should be put here.  \\
+\indent {\textit{Full paper}. Received 1 July 2019,
+revised 1 September 2019, accepted 1 October 2019, available online 20 October 2019}}
+
+\begin{abstract}
+Here goes a short abstract of the paper.
+\end{abstract}
+
+\maketitle
+
+%%% DO NOT DELETE %%%
+%%% field for doi number to be added %%%
+%\begin{textblock}{4}[0,0](9.45,1)
+%{\footnotesize doi: }
+%\end{textblock}
+
+
+\section{Introduction}
+\symbolfootnote[0]{$^\ast$Here goes some paper related information, like Research support etc.}
+%if there are no such information, this command can be removed or commented out.
+
+
+
+%%%%%%%%!!!
+
+\bigskip
+\flushleft{\bf Definitions and notation.} \\
+\bigskip
+
+We consider the Cantor set $2^\omega$ 
+which is a topological group (where 
+$(x+y)(k) = x(k) + y(k) \mathit{mod} 2$).
+%%%TODO: define 2^<omega!
+For any $s\in 2^{<\omega}$ denote 
+$[s] = \{x\in\cantor\colon s \subseteq x\}$.
+
+Let $\Perf$ stand for the family of all perfect subsets of the space
+$2^\omega$.
+  Throughout the paper we assume that every $\sigma$ - ideal
+$\calI$ is such that
+  $\forall_{x\in X} \lbrace x \rbrace \in \calI$.
+
+%%%%% zbedne, przynajmniej na razie
+%  Let us recall that $X\seq\ca$ is \underline{strongly meager}
+%(SFC) iff for every measure zero set $A\seq\ca$, there is $t\in\ca$,
+%so that $(X + t) \cap A = \emptyset$.
+%  A subset $X \subset \ca$ is a wQN-set if for each sequence of continuous
+%functions
+%$f_k:X \to \real$ with $f_k \to 0$ there is a subsequence $k_l$
+%such that $f_{k_l} \stackrel{QN}{\to}0$ i.e. there exists a partition
+%of $X$ into $\oo$ many sets $X_{n}$ ($n < \oo $), such that
+%$f_{k_l} \restriction X_k \to 0$ uniformly as $l \to \infty$.
+
+  By $Hom(X)$ we denote the group of all homeomorphisms of the
+topological space X.
+  We always assume that G is a fixed subgroup of $\Hom$.
+
+The following additional terminology will be useful in our proof.
+
+  For an arbitrary $g\in G$ and $Q \in \perf$
+we often abbreviate the image $g(Q) = \lbrace gx: x\in Q \rbrace$
+as simply $gQ$.
+
+  We denote by $\mgr(P)$ the collection of all
+first category sets on P, where $P \in Perf(X)$.
+
+  We use a letter $\neglig$ to denote
+the sigma ideal of Lebesgue measure zero sets of $2^\omega$.
+
+  We denote by $\trans$ the subgroup of all
+translations of $\cantor$. 
+
+\bigskip
+\flushleft{\bf Introduction.} \\
+\bigskip
+
+The aim of this paper is to investigate the $G-$ invariant
+version of always of the first category sets.
+First, recall the classical definition of always of the first category sets:
+\begin{definition}
+A set $X$ of $\cantor$ is an always of the first category ($\afc$) 
+iff for every $P\in \Perf$, $X\cap P$ is a first category set
+in the topology of $P$.
+\end{definition}
+
+The following notion of sets was first defined in \cite{NSW}
+and then it has been studied most extensively in
+papers \cite{NW1} and \cite{NW2}.
+
+\begin{definition}
+  A set $X$ of $\cantor$ is an $\afc'$--set if for each perfect
+set $P$ there is an $\fsigma$--set $F$ such that $X\subseteq F$
+and for each real $t$, $(F + t)\cap P$ is a first
+category set in the topology of $P$.
+\end{definition}
+
+%%%%% zapis powtarzajacy poprzednia definicje, wiec zapewne zbedny
+%\[
+%\forall_{x \in \cantor} (P + x) \cap F \in \mgr(P + x).
+%\]
+
+It is known (see for example \cite{NSW}),
+that $\afcp \seq \afc$ and every Sierpi\'nski set is an $\afcp$ set.
+Recall that $S \subseteq \cantor$ is a {\it Sierpi\'nski set}
+if, and only if, it is uncountable and has countable intersection with
+any set of measure zero. Recall also that under the assumption
+of Continuum Hypothesis there exists a Sierpi\'nski set (see \cite{Si}).
+
+Let us define the main notion of this article.
+
+\bigskip
+
+{\bf The $\afcg$ - sets}
+
+%%%Let us start with the following definition.
+
+Suppose that G is a subgroup of $\Hom$
+and let $X$ be an arbitrary subset of $\ca$.
+
+\begin{definition}
+\label{afcg}
+We say that $X \in \afcg$ iff
+for every $Q \in \perf$ there
+exists $F \supseteq X$, $F\in \fsigma$
+such that
+$\forall_{g\in G} gQ \cap F \in \mgr(gQ)$.
+\end{definition}
+
+  This notion is a natural generalization
+of the notion of $\afcp$ sets.
+
+\flushleft{\bf Remarks:} \\
+
+  It is obvious that $\afcp_{\trans} = \afcp$,
+$\afcp_{\lbrace id \rbrace} = \afc$
+and $\afcp_{\Hom} = [\cantor]^{\leq \omega}$.
+  It is also evident that if $G_1 \seq G_2$ then
+$\afcp_{G_1} \supseteq \afcp_{G_2}$.
+  Summarizing this we obtain
+the following chart, in which arrows
+$\longrightarrow$ denote inclusions.
+
+\begin{center}
+\setlength{\unitlength}{1mm}
+
+\begin{picture}(140,50)(5,0)
+
+\put(25,40){$\afcp_{\Hom}$}
+\put(60,40){$\afcp_{\trans}$}
+\put(100,40){$\afcp_{\lbrace id \rbrace}$}
+
+\put(25,20){$[\ca]^{\leq\oo}$}
+\put(60,20){$\afcp$}
+\put(100,20){$\afc$}
+
+\put(45,42){\vector(1,0){15}}
+\put(80,42){\vector(1,0){15}}
+
+\put(27,25){\line(0,1){13}}
+\put(28,25){\line(0,1){13}}
+
+\put(62,25){\line(0,1){13}}
+\put(63,25){\line(0,1){13}}
+
+\put(102,25){\line(0,1){13}}
+\put(103,25){\line(0,1){13}}
+
+\end{picture}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                          %
+%                                                                          %
+%                     Wlasnosc (Em)                                        %
+%                                                                          %
+%                                                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The following definition will be useful for the problems in this section.
+
+\begin{definition}
+\label{def_em}
+Let $\calI$ be a $\sigma$ - ideal of subsets of the space $\ca$.
+
+We say that a group $G \leq \Hom$ {\it has the $(Em)_{\calI}$ property}\/
+iff there exists a perfect set $Q \in \perf$
+such that for each
+$P\in \perf \setminus \calI$
+there exists $g \in G$ such that
+$P \cap gQ \not\in \mgr(gQ)$.
+\end{definition}
+
+\flushleft{\bf Remarks:} \\
+
+One can prove that $\trans$ does not have the $(Em)_{\neglig}$ property.
+
+Without loss we may assume that in Definition \ref{def_em}
+$P$ is only closed set such that $P \not\in \calI$.
+
+We will start with the following theorem.
+
+\begin{theorem}
+\label{em=>afcg->i}
+  Let $\calI$ be an arbitrary $\sigma$ - ideal of subsets of $\ca$
+such that $\forall_{x\in\ca} \lbrace x \rbrace \in \calI$.
+
+  Moreover, let $G \leq \Hom$
+be a subgroup of $\Hom$ with the property $(Em)_{\calI}$.
+
+  Then we have:
+$\afcg \seq \calI$.
+\end{theorem}
+
+\proof
+
+Let $X \seq \ca$ be a set such that $X \not\in \calI$.
+From the definition of
+the notion $(Em)_{\calI}$ we get a perfect set $Q$ such that
+for each closed $E \not\in \calI$ we have
+$\exists_{g \in G} E \cap gQ \not\in \mgr(gQ)$.
+
+Let $F \seq \ca$ be an $F_{\sigma}$ set
+such that $X \seq F$.
+We have that
+$$F = \bigcup_{ \nlto } F_n$$
+where $cl(F_n) = F_n$ , so there exists $n_0 < \omega$
+such that $F_{n_0} \not\in \calI$.
+Now there exists $g \in G$
+such that $F_{n_0} \cap gQ$
+is not meager in gQ.
+So we conclude, that X is not an $\afcg$ set.
+
+\bigskip
+
+The implication given in Theorem \ref{em=>afcg->i} is reversible
+under some additional set theoretical assumptions.
+Indeed, we have the following theorem:
+
+\begin{theorem}
+\label{em<=>afcg->i}
+  Let us assume like in Theorem \ref{em=>afcg->i}
+that $\calI$ is an arbitrary $\sigma$ - ideal of subsets of $\ca$
+such that $\forall_{x\in\ca} \lbrace x \rbrace \in \calI$ and
+$G \leq \Hom$ is a subgroup of $\Hom$.
+  Moreover, assume that
+%%%Another possible way to construct a counterexample
+%%%is the consideration of the $\sigma$ -- ideal of $s_0$ sets.
+\begin{enumerate}
+  \item
+    \[ \cof(\calI) = \cov(\calI) \leq \non(\afcg), \]
+  \item
+    \[ \forall_{P\in\perf\setminus\calI} \exists_{|C| \leq \oo}
+      \ca \setminus (P + C) \in \calI, \]
+  \item
+    \[ \trans \seq G. \]
+\end{enumerate}
+
+Then the following conditions are equivalent:
+
+\begin{enumerate}
+  \item
+    $\afcg \seq \calI$
+  \item
+    $G$ fulfills $(Em)_{\calI}$.
+\end{enumerate}
+\end{theorem}
+
+\proof
+
+Theorem \ref{em=>afcg->i}
+gives us immediately the implication $(2) \Rightarrow (1)$.
+
+
+  Now suppose that $G$ fulfills $\neg (Em)_{\calI}$.
+Since $\kappa = \cof(\calI) = \cov(\calI)$
+and $\calI$ contains singletons we conclude that
+there exists a $\kappa$ - Sierpi\'nski set $X$ with
+respect to $\calI$, i.e. a set $X$ of size
+$\kappa$ such that
+  \[
+    \forall_{A \in \calI} |A \cap X| < \kappa.
+  \]
+
+
+
+Let $Q \in \perf$ be arbitrary.
+From our assumption $\neg (Em)_{\calI}$
+there exists a perfect set P
+such that $P \not\in \calI$ and
+$\forall_{g \in G} gQ \cap P \in \mgr(gQ)$.
+  Pick a countable set $C \seq \ca$ such that
+$\ca \setminus (C+P) \in \calI$.
+
+We have
+
+$X =
+  \big[ [\ca \setminus (P+C) ] \cap X \big]
+\cup
+  \big[ (P+C) \cap X \big]$.
+
+Since $\ca \setminus (P + C) \in \calI$ we obtain
+
+\[ | [ \ca \setminus (P + C) ] \cap X | < \kappa. \]
+
+Moreover, if $c \in C$ and $g \in G$, then
+$hQ \cap P \in \mgr(hQ)$,
+where $h \in G$ is defined by $h(x) = g(x) - c$.
+  Hence $gQ \cap (P + c) \in \mgr(gQ)$,
+thus
+  $gQ \cap (P + C) \in \mgr(gQ)$ for each $g \in G$.
+
+  Since $\kappa \leq \non(\afcg)$ we obtain
+$[ \ca \setminus (P+C)] \cap X \in \afcg$,
+so there exists $E \in \fsigma$,
+$E \supseteq X \setminus (P + C)$ such that
+$\forall_{g \in G} gQ \cap E \in \mgr(gQ)$.
+  Finally, define $E^* = E \cup (P + C)$.
+It is easy to see that $X \seq E^*$ and
+$\forall_{g \in G} gQ \cap E^* \in \mgr(gQ)$.
+  Hence $X \in \afcg$ and the proof is
+completed, since X does not belong to $\calI$.
+\medskip
+
+  Unfortunately, we don't know whether this
+theorem is true under weaker assumptions.
+  Thus we think that the following question may be of
+some interest.
+
+\begin{question}
+Can we prove the equivalence given in the previous theorem
+under weaker set theoretical assumptions?
+\end{question}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                          %
+%                                                                          %
+%             Characterization (Em)                                        %
+%                                                                          %
+%                                                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  For any $\cF \subseteq \Perf$ 
+let us define the following useful cardinal coefficient:
+\begin{definition}
+$Em(\cF, G) = \min\{|\cG|\colon \cG\subseteq \Perf \wedge 
+\forall_{P\in\cF} \exists{g\in G} \exists_{Q\in\cG} gQ \subseteq P\}$
+\end{definition}
+
+  Let us formulate a characterization of the property 
+$(Em)$ in terms of previously defined coefficient.
+
+Assume that $G$ has the property that for each $x\in\cantor$
+the orbit $Gx$ is dense in $\cantor$.
+Then the following conditions are equivalent:
+
+\begin{enumerate}
+\item
+  $G$ fulfills $(Em)_{\calI}$; 
+\item
+  $|Em(\Perf\setminus \calI, G) | \leq \aleph_0$.
+\end{enumerate}
+
+  We will need the following technical lemma
+(folklore for the group $G = \trans$):
+\begin{lemma}\label{lemma-dense}
+If $G\leq Hom(\cantor)$ is a group such that for each 
+$x\in\cantor$, $Gx$ is dense in $\cantor$,
+then for every sequence $\langle Q_n\rangle$
+of perfect subsets of $\cantor$ there exists
+a perfect $P\in\Perf$ such that 
+$\forall_{n\in\omega} \exists_{g\in G} gQ_n \cap P 
+\not \in \meager(P)$.
+\end{lemma}
+\begin{proof}
+Let $v_k = [(0,\ldots,0, 1)]$ ($0$ $k$ times).
+For each $k$ choose $x_k\in Q_k$ and $g_k\in G$
+such that $g_k x_k \in V_k$. Define
+$P = \overline{\bigcup_{k\in\omega}g_k Q_k \cap V_k}$,
+then $P$ is a perfect set and if $k\in\omega$
+then 
+$g_k Q_k \cap P \supseteq g_k Q_k \cap V_k \not\in \meager(P)$.
+\end{proof}
+
+\begin{proof}%%of Theorem
+$(1)\to (2)$.
+Assume that $G$ has the $(Em)_\calI$ property,
+i.e. there exists $Q\in\Perf$ such that
+$\forall_{P\in\Perf\setminus\calI}\exists_{g\in G} 
+P\cap gQ\not\in \meager(gQ)$. 
+Let us define perfect sets:
+$\cG = \{Q \cap [s] \colon Q \cap [s] \not= \emptyset \wedge
+s\in 2^{<\omega}\}$.
+Then $|\cG| \leq \aleph_0$ and if $P\in\Perf\setminus\calI$
+then there exists $g\in G$ such that
+$P\cap gQ \not\in\meager(gQ)$, so
+$P\cap gQ \supseteq W\cap gQ \not= \emptyset$
+for some open set $W$.
+Then $g^{-1}[W] \cap Q \not\emptyset$
+so there exists $Q_1\in \cG$ such that
+$Q_1 \subseteq g^{-1}[W] \cap Q$.
+Hence $g[Q_1] \subseteq W \cap g[Q] \subseteq P \cap g[Q]$.
+This proves (2).
+
+$(2)\to(1)$.
+
+\end{proof}
+
+ 
+  Below we give an useful characterization of the
+property $(Em)_{\neglig}$.
+
+\medskip
+
+\begin{theorem}
+Let G be a subgroup of $\Hom$ which contains the
+subgroup $\trans$. The following two conditions are
+equivalent:
+
+\[ (1)\ \ \neg (Em)_{\neglig}, \]
+%%%i.e.
+%%%$\forall_{Q \in \perf} \exists_{P \in \perf \atop \mu(P) > 0}
+%%%\forall_{g \in G}
+%%%P \cap gQ \in \mgr(gQ) $
+
+\par (2) For every $Q \in \perf$
+and for every $\eps > 0$ there exists an open
+set U, such that
+$\mu(U) < \eps$
+and $\forall_{g \in G} gQ \cap U \not = \emptyset$
+\end{theorem}
+
+\proof
+
+$(1) \Rightarrow (2)$
+\par
+Assume that
+$\forall_{Q \in \perf} \exists_{P \in \perf \atop \mu(P) > 0}
+\forall_{g \in G} gQ \cap P \in \mgr(gQ)$
+
+Let $Q \in \perf$ be any perfect set and let $\eps > 0$.
+Pick a perfect set $P$, $\mu(P) > 0$ such
+that $\forall_{g \in G} gQ \cap P \in \mgr(gQ)$.
+We can find finite $C \seq \cantor$ such that
+$\mu(\cantor \setminus (C+P)) < \eps$.\
+Now put $U = \cantor \setminus (C+P)$.
+
+By way of contradiction suppose that
+there exists $g \in G$ such that
+$gQ \cap U = \emptyset$.
+Then $gQ \seq C + P$, hence
+there exists $c_0 \in C$ and an open set $I$
+such that $\emptyset \not = I \cap gQ \seq P + c_0$.
+  Define $h(x) = g(x) - c_0$, obviously $h \in G$.
+Next, $hQ = gQ - c_0$ thus
+$\emptyset \not = hQ \cap (I - c_0) \seq P$,
+which is a contradiction with
+$hQ \cap P \in \mgr(hQ)$.
+
+%%%so if $g_0$ denotes the translation
+%%%$x \rightarrow x-c_0$
+%%%there would be $g_0(Q) \cap g_0(I) \seq P$
+%%%5a contradiction, because
+%%%$g_0(Q) \in \ooo$
+
+\medskip
+
+$(2) \Rightarrow (1)$
+
+Assume (2). Let $R$ be any perfect
+set. Let $\{ I_m \} _{m < \omega}$
+be an enumeration of all basic clopen sets of $\cantor$.
+Let
+  \[\eps_{m} = {1 \over 2^{m + 2}}.\]
+For any $m < \omega$
+we choose, using the assumption (2),
+an open set $U_{m}$ such that
+
+\[
+\forall_{g\in G} R \cap I_m \not = \emptyset
+\Rightarrow U_{m} \cap g(R \cap I_m) \not = \emptyset
+\]
+
+and $\mu(U_{m}) < \eps_{m}$.
+This can be done, since
+$I_m \cap R$ is a perfect or an empty set.
+
+Now put
+
+\[ U = \bigcup_{m < \omega} U_m. \]
+
+We see that
+\[
+\mu(U) \leq \sum_{m < \omega}
+{1 \over 2^{m + 2}} \leq 2 \cdot {1 \over 4} < 1.
+\]
+
+Define $F = \cantor \setminus U$, then we have
+$\mu(F) > 0$
+so choose a perfect $P \seq F$ of positive
+measure.
+
+  Let $g \in G$ and $I_{m_0}$ be given such that
+$R \cap I_{m_0} \not = \emptyset$.
+
+Now $U_{m_0} \cap g(R \cap I_{m_0}) \not = \emptyset$.
+Moreover, since
+$U_{m_0} \cap P = \emptyset$
+we obtain that $g(R \cap I_{m_0}) \not \seq P$.
+This means that (1) holds.
+
+  \[ \square \]
+
+Notice that in the proof of implication (2)$\Rightarrow$(1)
+we did not use the assumption that
+$\trans \leq G$.
+
+\bigskip
+
+  In the next part we will prove theorems about relations between
+$\afcg$ and different classes of peculiar small sets of the real line.
+
+\begin{theorem}
+\label{-em=>N}
+  Assume that $G$ is a subgroup
+of $\Hom$ which contains $\trans$.
+  If $G$ fulfills $\neg (Em)_{\neglig}$,
+then every strongly meager set is an $\afcg$ set.
+\end{theorem}
+
+\proof
+
+Let X be a strongly meager set.
+Let $Q$ be an arbitrary perfect set.
+From $\neg (Em)_{\neglig}$ we know that there exists a perfect
+set $P$ such that $\mu (P) > 0$ and
+  \[ \forall_{g \in G} g(Q) \cap P \in \mgr(g(Q)). \]
+Take now countable $C \seq \cantor $ such that
+$\cantor \setminus (P + C) \in \neglig$.
+  Then there exists $x_0$ such that $(x_0 +X) \cap
+[ \cantor \setminus (P + C) ] = \emptyset $ ,
+so $x_0 + X \seq P + C$, hence $X \seq P + C - x_0$.
+  Let $g \in G$ be an arbitrary and let $c \in C$.
+Define $h \in G$ by $h(x) = g(x) - c + x_0$.
+  Then $h(Q) \cap P \in \mgr(h(Q))$, hence
+$\big( g(Q) - c + x_0\big) \cap P \in \mgr(g(Q) - c + x_0)$,
+thus $g(Q) \cap (P + c - x_0) \in \mgr(g(Q))$.
+  Since $c \in C$ was taken arbitrary, we conclude that
+$g(Q) \cap (P + C - x_0) \in \mgr(g(Q))$.
+  This implies that $X \in \afcg$, since $P + C - x_0 \in \fsigma$.
+
+%%%Take $g \in G$ such that
+%%%$g(x) = X + x_0$. Now let $Q \in \ooo$ be any perfect set from
+%%%$\ooo$. We have now, that
+%%%$$g(X) \in \mgr(Q)$$
+%%%Because $Q\in \ooo$ was taken arbitrary, this leads us
+%%%to conclude, that $\forall_{ Q \in \ooo} X \in \mgr(Q)$
+
+$$\square$$
+
+\flushleft{\bf Remark:} \\
+
+This implication is reversible
+under CH. Namely:
+
+\begin{theorem}
+Suppose that $G \leq \Hom$ and assume that $G$ has the $(Em)_{\neglig}$
+property. Moreover, assume CH. Then there exists a strongly
+meager set $X\seq\ca$ such that $X \not\in \afcg$.
+\end{theorem}
+
+
+\proof
+
+  Let $X\seq\ca$ be arbitrary Sierpi\'nski set.
+It is well known (see \cite{P}) that $X$ is
+strongly meager.
+  From the $(Em)_{\neglig}$ property we obtain that
+there exists $Q \in \perf$ such that
+  \[
+    \forall_{P \in \perf \setminus \neglig}
+    \exists_{g \in G} P \cap g(Q) \not\in \mgr(gQ).
+  \]
+Suppose that $E$ is an $\fsigma$--set such that $X \seq E$.
+Since $X \not \in \neglig$ it follows that $E \not \in \neglig$.
+  Hence there exists $P \in \perf \setminus \neglig $ such that
+$P \seq E$
+
+Therefore $\exists_{g \in G} P \cap g(Q) \not\in \mgr(gQ)$,
+hence $E \cap g(Q) \not\in \mgr(g(Q))$.
+  This yields $X \not\in \afcg$, which finishes the proof.
+
+\begin{corollary}
+\label{corollary_1}
+  Assume that $\cov(\neglig) = \cof(\neglig)$ and
+$\cov(\neglig)$ is a regular cardinal.
+  Let $G \leq \Hom$ and suppose that $\trans \leq G$.
+Then the following conditions are equivalent:
+
+  \begin{enumerate}
+  \item
+    $G$ has the $(Em)_{\neglig}$ property.
+
+  \item
+    $\afcg \seq \neglig$.
+
+  \end{enumerate}
+\end{corollary}
+
+\proof
+  The implication $(1) \Rightarrow (2)$ follows immediately
+from Theorem \ref{em=>afcg->i}.
+  Assume $\neg (Em)_{\neglig}$. Since $\cov(\neglig) = \cof(\neglig)$,
+there exists a $\cof(\neglig)$ -- Sierpi\'nski set.
+  By Lemma 8.5.4 from \cite{BJ}
+if there exists a $\kappa$ -- Sierpi\'nski set
+and $\cf(\kappa) = \kappa > \oo$,
+then every set of size $< \kappa$ is strongly meager.
+  Hence by Theorem \ref{-em=>N} we conclude that
+$\non(\afcg) \geq \cof(\neglig)$
+%%%  Next, it is sufficient to observe that in this case
+%%%we have
+%%%  $\cov(\neglig) = \non(\mgr) = \cof(\mgr) = \cof(\neglig)$,
+thus all assumptions of Theorem \ref{em<=>afcg->i} are satisfied.
+  $\square$
+
+%%%%%%%%!!!
+
+
+
+%References should be typeset within thebibliography environment
+\begin{thebibliography}{99}  % use two-digit argument if there are 10 or more references, one-digit otherwise
+\setlength{\itemsep}{6pt}
+
+\bibitem{1} Author 1, \textit{Book Title}, Publisher, 2016.
+
+\bibitem{2} Author 2, Author 3, Author, 4, \textit{Title 2}, Journal name, 11(2) (2016), 22-31.
+
+\bibitem{3} Author 5, Author 6, \textit{Title 3}, Proceedings of the Conference, place, July 22-26 2018, 12-18.
+\end{thebibliography}
+
+
+\end{document}
+
+%%%%%% usuniety material:
+%%% Zdecydowalem sie material o wlasnosci (Sp) usunac z tej wersji bowiem
+%%% byl zbyt oczywistym uogolnieniem dosc specjalistycznej pracy
+%%% o relacji miedzy wQN a AFC^'.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                          %
+%                                                                          %
+%                     Wlasnosc (Sp)                                        %
+%                                                                          %
+%                                                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{definition}
+Let G be any subgroup of $\Hom$. We say that G has the
+{\it (Sp) property}\/
+iff for every perfect set $Q$
+there exists a sequence $\{ U_i \} _{i < \omega} $
+of clopen disjoint subsets of $\cantor$ such that
+\[ \forall_{g \in G \atop i < \omega}
+   U_i \cap g(Q) \not = \emptyset \]
+\end{definition}
+
+\bigskip
+
+The following proposition is the $G - transitive$ analog
+of the theorem that every $wQN$ set has the $\afcp$
+property (see \cite{N}, Conclusion 2).
+
+\begin{theorem}
+Let G be a subgroup of $\Hom$. If G has the (Sp)
+property, then every wQN set is an $\afcg$.
+\end{theorem}
+
+\proof
+
+  Let G be a subgroup of $\Hom$ which fulfills (Sp).
+Let X be a wQN set. Let $Q_0 \in \perf$
+be an arbitrary perfect set.
+  Let $\{ B_n \}_{n<\omega}$ be an enumeration of all
+basic clopen subsets of $\ca$ such that
+$B_n \cap Q_0 \not = \emptyset$.
+
+Since $B_n \cap Q_0$ is a perfect subset of $\ca$ we can find
+a sequence
+$\lbrace U^{(n)}_i \rbrace _{i< \omega}$
+of disjoint clopen subsets such that
+
+\[
+\forall_{g \in G \atop i < \omega}
+g(B_n \cap Q_0) \cap U_i^{(n)} \not = \emptyset
+\]
+
+Next, define
+
+\[
+F_i(x) = \sum_{\nlto} {1 \over 2^n} \cdot \chi_{U^{(n)}_i} (x),
+\]
+
+where $\chi_A$ denotes as usually the characteristic function of the set A.
+
+Next, it is easy to see that for each $i\in\oo$ $F_i(x)$ is
+a continuous function and
+$\lim_{i \rightarrow \infty} F_i(x) = 0$
+pointwise.
+  Thus from the definition of wQN sets we can find a subsequence
+$F_{i_j}$ and a partition of X:
+$X = \bigcup_{k<\omega} X_k $
+such that $$F_{i_j} \restriction \overline{ X_k} \rightarrow 0$$
+uniformly as $j \rightarrow \infty$.
+  We put
+  \[ E = \bigcup_{k<\omega} \overline{X_k} \]
+Obviously, E is an $\fsigma$ set.
+
+Take any $g \in G$.
+By way of contradiction assume that
+$E \cap g(Q_0) \not\in \mgr(g(Q_0))$.
+Then $\overline{X_k} \cap g(Q_0) \not\in \mgr(g(Q_0))$
+for some $k \in \oo$ and therefore
+$g(B_{n_0} \cap Q_0) \seq \overline{X_k}$
+for some $n_0 \in \oo$.
+  Next for each $i \in \oo$,
+$g(B_{n_0} \cap Q_0) \cap U^{(n_0)}_i \not= \emptyset$
+and this is a contradiction since the sequence
+$\lbrace F_{i_j} \rbrace_{j \in \oo}$ of functions converge
+uniformly to zero on $\overline{X_k}$.
+
+%%%It follows that
+%%%\[ F \cap g(Q_0) \in \mgr(gQ_0) \]
+%%%since otherwise we would have
+%%%  \[ \overline{X_k} \cap g(Q_0) \not\in \mgr(gQ_0) \]
+%%%for some $k\in\oo$,
+%%%then we would have
+%%%$B_{n_0}$ such that
+%%%  \[ g(B_{n_0} \cap Q_0) \seq \overline{X_k} \]
+%%%for some $n_0 \in \oo$.
+%%%Now for every $i < \omega$ $g(B_{n_0} \cap Q_0) \cap U^{n_0}_i \not =
+%%%\emptyset$
+%%%so $F_{i_j}$ on $g(B_{n_0} \cap Q_0)$
+%%%does not converge uniformly to zero, so
+
+\smallskip
+  \[ \square \]
+
+
+\bigskip
+\bigskip
+
+  It is an easy observation that if G has the (Sp) property
+then $G$ does not have the $(Em)_{\neglig}$ property.
+Indeed, assume (Sp), so
+\[ \forall_{Q \in \perf} \exists_{U_i\ disjoint\ \atop clopen }
+
+\forall_{g \in G \atop i < \omega} U_i \cap gQ \not = \emptyset \]
+
+ Let $\epsilon > 0$.
+We can easy find $U_i$ such that $\mu (U_i) < \epsilon$.
+Now
+\[ \forall_{g \in G} gQ \cap U_i \not = \emptyset. \]
+
+It follows immediately from Theorem 2 that
+$G$ fulfills $\neg (Em)_{\neglig}$.
+

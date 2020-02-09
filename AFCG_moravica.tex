@@ -54,15 +54,15 @@
 \newcommand\trans{{\it Trans}(\ca)}
 \newcommand\ooo{\underline{O}}
 %%%\newcommand{\square}{\hbox{\ \ \ \ \ \vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
-\newcommand{\eee}{{\cal E}}
+\newcommand{\eee}{{\mathcal E}}
 \newcommand{\seq}{\subseteq}
 \newcommand{\ca}{2^{\omega}}
 \newcommand{\afcbar}{\overline{AFC}}
 \newcommand{\arr}{\rightarrow}
 \newcommand{\Arr}{\Rightarrow}
 \newcommand{\afc}{AFC}
-\newcommand{\mgr}{{\cal M}}
-\newcommand{\neglig}{{\cal N}}
+\newcommand{\mgr}{{\mathcal M}}
+\newcommand{\neglig}{{\mathcal N}}
 \newcommand{\oo}{\omega}
 %%%\newcommand{\qed}{\sharp}
 %%%\newcommand{\int}{\hbox{\it int}}
@@ -95,26 +95,22 @@
 \newcommand{\Part}{{\it Part}}
 \newcommand{\homeomorphic}{\approx}
 \newcommand{\Perf}{{\mathrm Perf}}
-\newcommand{\calB}{{\cal B}}
+\newcommand{\calB}{{\mathcal B}}
 \newcommand{\calF}{{\mathcal{F}}}
 \newcommand{\cF}{\calF}
-\newcommand{\calG}{{\cal G}}
+\newcommand{\calG}{{\mathcal G}}
 \newcommand{\cG}{\calG}
 \newcommand{\calI}{{\mathcal{I}}}
-\newcommand{\calM}{{{\mathcal{M}}}
+\newcommand{\calM}{{\mathcal{M}}}
 \newcommand{\meager}{\mathcal{M}}
 \newcommand{\Even}{\hbox{\rm \tiny Even}}
 \newcommand{\Odd}{\hbox{\rm \tiny Odd}}
-\newcommand{\minideal}{${\cal F}_{\hbox{\rm \scriptsize min}}(\neg D)\;$}
+\newcommand{\minideal}{${\mathcal F}_{\hbox{\rm \scriptsize min}}(\neg D)\;$}
 \newcommand{\dom}{{\rm dom}}
 \newcommand\Hom{{\rm Hom(\ca)}}
 \newcommand{\cf}{{\rm cf}}
 
-\newcommand{\gameonideal}{{\cal G}_\calI^{\it Tree}}
-\newcommand{\treeproperty}{{P}^{\it Tree}}
-
-%%%\newcommand{\blacksquare}{\begin{flushright} \rule{2mm}{2mm} \end{flushright}}
-
+\newcommand{\bbbf}{{}} %%% Bibliography bold face - espacio vacio - temporarily
 
 \def\volinfo{\textsc{Vol.} \textbf{\currentvolume}, No. \textbf{\currentissue}}
 \def\publname{Mathematica Moravica}
@@ -129,8 +125,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 %Here authors can define environments and their numbering schemes.
 %Authors should add environments that are to be used in the paper
 
@@ -144,6 +138,8 @@
 \newtheorem{remark}{Remark}[section]
 \newtheorem{example}{Example}[section]
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% additional (my) environments:
+\newtheorem{question}[theorem]{Question}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Authors can also define custom functions or macros to make typing of frequently used complicated expressions easier.
@@ -828,50 +824,33 @@ thus all assumptions of Theorem \ref{em<=>afcg->i} are satisfied.
 %References should be typeset within thebibliography environment
 \begin{thebibliography}{99}  % use two-digit argument if there are 10 or more references, one-digit otherwise
 \setlength{\itemsep}{6pt}
-
-\bibitem{1} Author 1, \textit{Book Title}, Publisher, 2016.
-
-\bibitem{2} Author 2, Author 3, Author, 4, \textit{Title 2}, Journal name, 11(2) (2016), 22-31.
-
-\bibitem{3} Author 5, Author 6, \textit{Title 3}, Proceedings of the Conference, place, July 22-26 2018, 12-18.
-%%%%%% tutaj wkopiowane z oryginalnego pliku:
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%% The bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \bibitem{BJ} T. Bartoszy\'nski, H. Judah, \textit{Set Theory: on the
 strucure of the real line}, A. K. Peters, Wellesley, Mass., 1995.
 
-\bibitem[N]{N}
-A. Nowik
-{\em Remarks about transitive version of perfectly
-meager sets,}
-{\bf Real Analysis Exchange} 22(1) (1996/97) 406 - 412.
+\bibitem{N} A. Nowik
+\textit{Remarks about transitive version of perfectly
+meager sets,} {\bbbf Real Analysis Exchange} 22(1) (1996/97) 406 - 412.
 
-\bibitem[NSW]{NSW}
-A. Nowik, M. Scheepers, T. Weiss.
-{\em The algebraic sum of sets of
+\bibitem{NSW} A. Nowik, M. Scheepers, T. Weiss.
+\textit{The algebraic sum of sets of
     real numbers with strong measure zero sets,}
-{\bf Journal of Symbolic Logic} vol. 63(1), 1998, 301 - 324.
+{\bbbf Journal of Symbolic Logic} vol. 63(1), 1998, 301 - 324.
 
-\bibitem[NW1]{NW1}
-A. Nowik, T. Weiss
-{\em Not every Q - set is perfectly meager in the transitive sense.}
-{\bf Proceedings of The American Mathematical Society} 128(496), No 10
+\bibitem{NW1} A. Nowik, T. Weiss
+\textit{Not every Q - set is perfectly meager in the transitive sense.}
+{\bbbf Proceedings of The American Mathematical Society} 128(496), No 10
 (October 2000), 3017 - 3024.
 
-\bibitem[NW2]{NW2}
-A. Nowik, T. Weiss
-{\em Not every Q - set is perfectly meager in the transitive sense.}
-{\bf Proceedings of The American Mathematical Society} 128(496), No 10
+\bibitem{NW2} A. Nowik, T. Weiss
+\textit{Not every Q - set is perfectly meager in the transitive sense.}
+{\bbbf Proceedings of The American Mathematical Society} 128(496), No 10
 (October 2000), 3017 - 3024.
 
-\bibitem[P]{P}
-J. Pawlikowski, {\em All Sierpi\'nski sets are strongly
-meager}, 1992, {\bf Arch. Mat. Logic} 35 (1996) 281 -- 285.
+\bibitem{P} J. Pawlikowski, \textit{All Sierpi\'nski sets are strongly
+meager}, 1992, {\bbbf Arch. Mat. Logic} 35 (1996) 281 -- 285.
 
-\bibitem[Si]{Si}
-W. Sierpi\'nski, {\em Sur l'hypoth\`{e}se du continu 
-($2^{\aleph_0} = \aleph_1$)}, {\bf Fundamenta Mathematicae}, 5 (1)
+\bibitem{Si} W. Sierpi\'nski, \textit{Sur l'hypoth\`{e}se du continu 
+($2^{\aleph_0} = \aleph_1$)}, {\bbbf Fundamenta Mathematicae}, 5 (1)
 (1924), 177–187
 \end{thebibliography}
 

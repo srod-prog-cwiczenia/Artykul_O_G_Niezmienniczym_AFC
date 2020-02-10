@@ -40,19 +40,56 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% Mathematica Moravica Logo %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\def\volinfo{\textsc{Vol.} \textbf{\currentvolume}, No. \textbf{\currentissue}}
+\def\publname{Mathematica Moravica}
+\def\copyrightyear{2020}
+\def\copyrightholder{Mathematica Moravica}
+\def\currentvolume{1}
+\def\currentmonth{}
+\def\currentyear{2020}
+\def\currentissue{1}
+\pagespan{1}{12}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%  My macros: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\nlto}{n < \omega}
 \newcommand{\eps}{\epsilon}
 \newcommand{\epzero}{\eps > 0}
 \newcommand{\gd}{G_{\delta}}
-
+%%%%%%%%%%%%%%%%%%%%%% Calligraphic font commands %%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calI}{\mathcal{I}}
+\newcommand{\calJ}{\mathcal{J}}
+\newcommand{\calK}{\mathcal{K}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calQ}{\mathcal{Q}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calT}{\mathcal{T}}
+\newcommand{\calU}{\mathcal{U}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calZ}{\mathcal{Z}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\afc}{\mathrm{AFC}}
 \newcommand{\afcp}{\afc^\prime}
 \newcommand\afcstar{\afc^*_{G}}
 \newcommand\afcg{\afcp_{G}}
 \newcommand\trans{\mathit{Trans}(\ca)}
 \newcommand\ooo{\underline{O}}
-%%%\newcommand{\square}{\hbox{\ \ \ \ \ \vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
 \newcommand{\eee}{{\mathcal E}}
 \newcommand{\seq}{\subseteq}
 \newcommand{\ca}{2^{\omega}}
@@ -62,8 +99,6 @@
 \newcommand{\mgr}{\mathcal{M}}
 \newcommand{\neglig}{\mathcal{N}}
 \newcommand{\oo}{\omega}
-%%%\newcommand{\qed}{\sharp}
-%%%\newcommand{\int}{\hbox{\it int}}
 \newcommand{\finsub}{[\oo]^{<\oo}}
 \newcommand{\infsub}{[\oo]^{\oo}}
 \newcommand{\incr}{\oo^{\uparrow \oo }}
@@ -85,43 +120,18 @@
 \newcommand{\ucrz}{UCR_0}
 \newcommand{\borelucrz}{Borel-UCR_0}
 \newcommand{\Bor}{{\it Bor}}
-%%%\newcommand{\proof}{\flushleft{ \sc Proof. } \\ }
-%%%\newcommand{\restriction}{{\hbox{$\,|\grave{}\,$}}}
-\newcommand{\szerod}{(s^2_0)}
 \newcommand{\la}{\langle}
 \newcommand{\ra}{\rangle}
-\newcommand{\Part}{{\it Part}}
 \newcommand{\homeomorphic}{\approx}
 \newcommand{\Perf}{\mathrm{Perf}}
-\newcommand{\calB}{\mathcal{B}}
-\newcommand{\calF}{\mathcal{F}}
-\newcommand{\cF}{\calF}
-\newcommand{\calG}{\mathcal{G}}
-\newcommand{\cG}{\calG}
-\newcommand{\calI}{{\mathcal{I}}}
-\newcommand{\calM}{{\mathcal{M}}}
 \newcommand{\meager}{\mathcal{M}}
 \newcommand{\Even}{\hbox{\rm \tiny Even}}
 \newcommand{\Odd}{\hbox{\rm \tiny Odd}}
-\newcommand{\minideal}{${\mathcal F}_{\hbox{\rm \scriptsize min}}(\neg D)\;$}
 \newcommand{\dom}{{\rm dom}}
 \newcommand\Hom{{\rm Hom(\ca)}}
 \newcommand{\cf}{{\rm cf}}
 
 \newcommand{\bbbf}{{}} %%% Bibliography bold face - espacio vacio - temporarily
-
-\def\volinfo{\textsc{Vol.} \textbf{\currentvolume}, No. \textbf{\currentissue}}
-\def\publname{Mathematica Moravica}
-\def\copyrightyear{2019}
-\def\copyrightholder{Mathematica Moravica}
-\def\currentvolume{23}
-\def\currentmonth{}
-\def\currentyear{2019}
-\def\currentissue{2}
-\pagespan{1}{12}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Here authors can define environments and their numbering schemes.
 %Authors should add environments that are to be used in the paper
@@ -193,9 +203,9 @@ available online (...)}}
 
 \begin{abstract}
   We study the $G-$ invariant version of always of
-the first category sets.
-  This notion is a generalization of the notion of
-$\afcp$ sets.
+the first category sets (a generalization of the notion of
+$\afcp$ sets). We find the necessary and sufficient conditions for the inclusion
+$\afcg \seq \calI$.
 \end{abstract}
 
 \maketitle
@@ -214,7 +224,7 @@ $\afcp$ sets.
 
 \section{Definitions and notation} 
 
-We consider the Cantor set $2^\omega$ 
+We consider the Cantor space $2^\omega$ 
 which is a topological group (where 
 $(x+y)(k) = x(k) + y(k)\mod 2$).
 %%%TODO: define 2^<omega!
@@ -227,10 +237,10 @@ $2^\omega$.
 $\calI$ is such that
   $\forall_{x\in X} \lbrace x \rbrace \in \calI$.
 
+  Let us recall that $X\seq\ca$ is \underline{strongly meager}
+(SFC) iff for every measure zero set $A\seq\ca$, there exists $t\in\ca$,
+such that $(X + t) \cap A = \emptyset$.
 %%%%% zbedne, przynajmniej na razie
-%  Let us recall that $X\seq\ca$ is \underline{strongly meager}
-%(SFC) iff for every measure zero set $A\seq\ca$, there is $t\in\ca$,
-%so that $(X + t) \cap A = \emptyset$.
 %  A subset $X \subset \ca$ is a wQN-set if for each sequence of continuous
 %functions
 %$f_k:X \to \real$ with $f_k \to 0$ there is a subsequence $k_l$
@@ -273,9 +283,9 @@ and then it has been studied most extensively in
 papers \cite{NW1} and \cite{NW2}.
 
 \begin{definition}
-  A set $X$ of $\cantor$ is an $\afc'$--set if for each perfect
-set $P$ there is an $\fsigma$--set $F$ such that $X\subseteq F$
-and for each real $t$, $(F + t)\cap P$ is a first
+  A set $X\subseteq\cantor$ is an $\afcp$--set if for each perfect
+set $P$ there exists an $\fsigma$--set $F$ such that $X\subseteq F$
+and for each $t\in\cantor$, $(F + t)\cap P$ is a first
 category set in the topology of $P$.
 \end{definition}
 
@@ -524,11 +534,11 @@ under weaker set theoretical assumptions?
 %                                                                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  For any $\cF \subseteq \Perf$ 
+  For any $\calF \subseteq \Perf$ 
 let us define the following useful cardinal coefficient:
 \begin{definition}
-$Em(\cF, G) = \min\{|\cG|\colon \cG\subseteq \Perf \wedge 
-\forall_{P\in\cF} \exists{g\in G} \exists_{Q\in\cG} gQ \subseteq P\}$
+$Em(\calF, G) = \min\{|\calG|\colon \calG\subseteq \Perf \wedge 
+\forall_{P\in\calF} \exists{g\in G} \exists_{Q\in\calG} gQ \subseteq P\}$
 \end{definition}
 
   Let us formulate a characterization of the property 
@@ -573,15 +583,15 @@ i.e. there exists $Q\in\Perf$ such that
 $\forall_{P\in\Perf\setminus\calI}\exists_{g\in G} 
 P\cap gQ\not\in \meager(gQ)$. 
 Let us define perfect sets:
-$\cG = \{Q \cap [s] \colon Q \cap [s] \not= \emptyset \wedge
+$\calG = \{Q \cap [s] \colon Q \cap [s] \not= \emptyset \wedge
 s\in 2^{<\omega}\}$.
-Then $|\cG| \leq \aleph_0$ and if $P\in\Perf\setminus\calI$
+Then $|\calG| \leq \aleph_0$ and if $P\in\Perf\setminus\calI$
 then there exists $g\in G$ such that
 $P\cap gQ \not\in\meager(gQ)$, so
 $P\cap gQ \supseteq W\cap gQ \not= \emptyset$
 for some open set $W$.
 Then $g^{-1}[W] \cap Q \not\emptyset$
-so there exists $Q_1\in \cG$ such that
+so there exists $Q_1\in \calG$ such that
 $Q_1 \subseteq g^{-1}[W] \cap Q$.
 Hence $g[Q_1] \subseteq W \cap g[Q] \subseteq P \cap g[Q]$.
 This proves (2).

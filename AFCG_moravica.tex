@@ -225,21 +225,23 @@ $\afcg \seq \calI$.
 \section{Definitions and notation} 
 
 We consider the Cantor space $2^\omega$ 
-which is a topological group (where 
+as a topological group (where 
 $(x+y)(k) = x(k) + y(k)\mod 2$).
-%%%TODO: define 2^<omega!
-For any $s\in 2^{<\omega}$ denote 
+By $2^{<\omega}$ let us denote the collection of all finite binary sequences:
+$2^{<\omega} = \lbrace f\colon n \to 2 \text{ where } n \in\omega\rbrace$
+
+  For any $s\in 2^{<\omega}$ 
+by $[s]$ denote the base open set detemined by $s$: 
 $[s] = \{x\in\cantor\colon s \subseteq x\}$.
-
-Let $\Perf$ stand for the family of all perfect subsets of the space
+  Let $\Perf$ stand for the family of all perfect subsets of the space
 $2^\omega$.
+  Recall that a proper collection of subsets of $\cantor$: 
+$\calI \subseteq P(\cantor)$ is called an ideal 
+iff it is closed under taking subsets and finite sums.
   Throughout the paper we assume that every $\sigma$ - ideal
-$\calI$ is such that
-  $\forall_{x\in X} \lbrace x \rbrace \in \calI$.
+$\calI$ contains all singletons:
+$\forall_{x\in X} \lbrace x \rbrace \in \calI$.
 
-  Let us recall that $X\seq\ca$ is \underline{strongly meager}
-(SFC) iff for every measure zero set $A\seq\ca$, there exists $t\in\ca$,
-such that $(X + t) \cap A = \emptyset$.
 %%%%% zbedne, przynajmniej na razie
 %  A subset $X \subset \ca$ is a wQN-set if for each sequence of continuous
 %functions
@@ -256,7 +258,9 @@ The following additional terminology will be useful in our proof.
 
   For an arbitrary $g\in G$ and $Q \in \perf$
 we often abbreviate the image $g(Q) = \lbrace gx: x\in Q \rbrace$
-as simply $gQ$.
+and write simply $gQ$. Also for any $t\in\cantor$ and
+$A \subseteq \cantor$ we write
+$A + t = \lbrace x + t \colon x \in A \rbrace$.
 
   We denote by $\mgr(P)$ the collection of all
 first category sets on P, where $P \in Perf(X)$.
@@ -271,6 +275,18 @@ translations of $\cantor$.
 
 The aim of this paper is to investigate the $G-$ invariant
 version of always of the first category sets.
+
+Let us start with the following, classical definition:
+\begin{definition}
+  A subset $S \subseteq \cantor$ is a {\it Sierpi\'nski set}
+if, and only if, it is uncountable and has countable intersection with
+any set of measure zero. 
+\end{definition}
+
+Notice that under the assumption
+of Continuum Hypothesis there exists a Sierpi\'nski set (see \cite{Si})
+and, on the other hand, it is consistent that there is no Sierpi\'nski set.
+
 First, recall the classical definition of always of the first category sets:
 \begin{definition}
 A set $X$ of $\cantor$ is an always of the first category ($\afc$) 
@@ -278,7 +294,7 @@ iff for every $P\in \Perf$, $X\cap P$ is a first category set
 in the topology of $P$.
 \end{definition}
 
-The following notion of sets was first defined in \cite{NSW}
+  The following notion of sets was first defined in \cite{NSW}
 and then it has been studied most extensively in
 papers \cite{NW1} and \cite{NW2}.
 
@@ -288,20 +304,22 @@ set $P$ there exists an $\fsigma$--set $F$ such that $X\subseteq F$
 and for each $t\in\cantor$, $(F + t)\cap P$ is a first
 category set in the topology of $P$.
 \end{definition}
-
 %%%%% zapis powtarzajacy poprzednia definicje, wiec zapewne zbedny
 %\[
 %\forall_{x \in \cantor} (P + x) \cap F \in \mgr(P + x).
 %\]
 
-It is known (see for example \cite{NSW}),
-that $\afcp \seq \afc$ and every Sierpi\'nski set is an $\afcp$ set.
-Recall that $S \subseteq \cantor$ is a {\it Sierpi\'nski set}
-if, and only if, it is uncountable and has countable intersection with
-any set of measure zero. Recall also that under the assumption
-of Continuum Hypothesis there exists a Sierpi\'nski set (see \cite{Si}).
+  Let us recall the following definition:
+\begin{definition}
+  A set $X\seq\ca$ is called \underline{strongly meager}
+(SFC) iff for every measure zero set $A\seq\ca$, there exists $t\in\ca$,
+such that $(X + t) \cap A = \emptyset$.
+\end{definition}
 
-Let us define the main notion of this article.
+  It is known (see for example \cite{NSW}),
+that $\afcp \seq \afc$ and every Sierpi\'nski set is an $\afcp$ set.
+
+  Let us define the main notion of this article.
 
 \bigskip
 
@@ -310,11 +328,12 @@ Let us define the main notion of this article.
 %%%Let us start with the following definition.
 
 Suppose that G is a subgroup of $\Hom$
-and let $X$ be an arbitrary subset of $\ca$.
+and let $X$ be an arbitrary subset of $\cantor$.
 
 \begin{definition}
 \label{afcg}
-We say that $X \in \afcg$ iff
+Suppose that $X \subseteq \cantor$.
+We write $X \in \afcg$ iff
 for every $Q \in \perf$ there
 exists $F \supseteq X$, $F\in \fsigma$
 such that

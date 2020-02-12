@@ -175,8 +175,8 @@
 %and use \symbolfootnote[2]{footnote} to get a dagger
 %and use \symbolfootnote[3]{footnote} to get a double dagger
 
-\title[On G - transitive version of always of the first category sets]{
-On G - transitive version of always of the first category sets}
+\title[On G - transitive version of perfectly meager sets]{
+On G - transitive version of perfectly meager sets}
 
 \author[Andrzej Nowik]{Andrzej Nowik}
 %\ast is used as a reference sign for some information related to the paper,
@@ -195,15 +195,14 @@ Poland}
 \date{}
 \subjclass[2010]{Primary: 03E15; Secondary 03E20, 28E15.} %%% TODO: sprawdzic czy ams2010 
 %%%%% classification jest nadal aktualne (bo w oryginalnym pliku bylo z ...2000 - sic!)
-\keywords{Always first category sets, strongly meager sets,
-WQN sets, $AFC^{\prime}$ sets.\\
+\keywords{Perfectly meager sets, strongly meager sets, $\afcp$ sets.\\
 \indent {\textit{Full paper}. Received (...),
 revised 14 February 2020, accepted (...), 
 available online (...)}}
 
 \begin{abstract}
-  We study the $G-$ invariant version of always of
-the first category sets (a generalization of the notion of
+  We study the $G-$ invariant version of perfectly meager 
+sets (a generalization of the notion of
 $\afcp$ sets). We find the necessary and sufficient conditions for the inclusion
 $\afcg \seq \calI$.
 \end{abstract}
@@ -273,10 +272,10 @@ translations of $\cantor$.
 
 \section{Introduction} 
 
-The aim of this paper is to investigate the $G-$ invariant
-version of always of the first category sets.
+%The aim of this paper is to investigate the $G-$ invariant
+%version of always of the first category sets.
 
-Let us start with the following, classical definition:
+  Let us start with the following, classical definition:
 \begin{definition}
   A subset $S \subseteq \cantor$ is a {\it Sierpi\'nski set}
 if, and only if, it is uncountable and has countable intersection with
@@ -287,9 +286,10 @@ Notice that under the assumption
 of Continuum Hypothesis there exists a Sierpi\'nski set (see \cite{Si})
 and, on the other hand, it is consistent that there is no Sierpi\'nski set.
 
-First, recall the classical definition of always of the first category sets:
+First, recall the classical definition of perfectly meager sets 
+(called also always of the first category sets):
 \begin{definition}
-A set $X$ of $\cantor$ is an always of the first category ($\afc$) 
+A set $X$ of $\cantor$ is a perfectly meager ($\afc$) set
 iff for every $P\in \Perf$, $X\cap P$ is a first category set
 in the topology of $P$.
 \end{definition}
@@ -350,15 +350,14 @@ $\afcp_{\lbrace id \rbrace} = \afc$
 and $\afcp_{\Hom} = [\cantor]^{\leq \omega}$.
   It is also evident that if $G_1 \seq G_2$ then
 $\afcp_{G_1} \supseteq \afcp_{G_2}$.
-  Summarizing this we obtain
-the following chart, in which arrows
-$\longrightarrow$ denote inclusions.
+  All inclusions are summarized in Fig. \ref{figure1}
+%%%%TODO: wyjasnic dlaczego ref jest tutaj jako 2, przeciez nie ma nigdzie figure 1!
+%%%% co jest grane?
+(where arrows denote inclusions).
 
-\begin{center}
+\begin{figure}[bth]
 \setlength{\unitlength}{1mm}
-
 \begin{picture}(140,50)(5,0)
-
 \put(25,40){$\afcp_{\Hom}$}
 \put(60,40){$\afcp_{\trans}$}
 \put(100,40){$\afcp_{\lbrace id \rbrace}$}
@@ -378,9 +377,10 @@ $\longrightarrow$ denote inclusions.
 
 \put(102,25){\line(0,1){13}}
 \put(103,25){\line(0,1){13}}
-
 \end{picture}
-\end{center}
+\label{figure1}
+\caption{Relations between various versions of perfectly meager sets}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                          %
@@ -408,7 +408,7 @@ $P \cap gQ \not\in \mgr(gQ)$.
 
 One can prove that $\trans$ does not have the $(Em)_{\neglig}$ property.
 
-Without loss we may assume that in Definition \ref{def_em}
+Without loss of generality we may assume that in Definition \ref{def_em}
 $P$ is only closed set such that $P \not\in \calI$.
 
 We will start with the following theorem.

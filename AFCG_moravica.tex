@@ -235,8 +235,8 @@ $[s] = \{x\in\cantor\colon s \subseteq x\}$.
   Let $\Perf$ stand for the family of all perfect subsets of the space
 $2^\omega$.
   Recall that a proper collection of subsets of $\cantor$: 
-$\calI \subseteq P(\cantor)$ is called an ideal 
-iff it is closed under taking subsets and finite sums.
+$\calI \subseteq P(\cantor)$ is called a $\sigma$ - ideal 
+iff it is closed under taking subsets and countable sums.
   Throughout the paper we assume that every $\sigma$ - ideal
 $\calI$ contains all singletons:
 $\forall_{x\in X} \lbrace x \rbrace \in \calI$.
@@ -248,6 +248,18 @@ $\forall_{x\in X} \lbrace x \rbrace \in \calI$.
 %such that $f_{k_l} \stackrel{QN}{\to}0$ i.e. there exists a partition
 %of $X$ into $\oo$ many sets $X_{n}$ ($n < \oo $), such that
 %$f_{k_l} \restriction X_k \to 0$ uniformly as $l \to \infty$.
+
+  Let $\calI \subseteq P(\cantor)$ be a $\sigma$ - ideal.
+Define the following cardinal numbers:
+
+\begin{definition}
+$\cov(\calI) = \min \lbrace |\calA| \colon \calA \subseteq \calI \wedge
+\bigcup \calA = \cantor\rbrace$ and
+$\cof(\calI) = \min \lbrace |\calA| \colon \calA \subseteq \calI \wedge
+\forall_{Z \in \calI} \exists_{A\in\calA} Z \subseteq A\rbrace$.
+\end{definition}
+
+  Notice that we always have $\cov(\calI) \leq \cof(\calI)$.
 
   By $Hom(X)$ we denote the group of all homeomorphisms of the
 topological space X.
@@ -285,6 +297,19 @@ any set of measure zero.
 Notice that under the assumption
 of Continuum Hypothesis there exists a Sierpi\'nski set (see \cite{Si})
 and, on the other hand, it is consistent that there is no Sierpi\'nski set.
+
+A special variation of the notion of a Sierpi\'nski set
+is a $\kappa$ - Sierpi\'nski set with respect to the
+$\sigma$ - ideal $\calI$, namely:
+\begin{definition}
+\label{kappaSierp}
+Suppose that $\kappa$ is a cardinal number 
+and $\calI \subseteq P(\cantor)$ a $\sigma$ - ideal.
+A set $X \subseteq\cantor$ is called 
+a $\kappa$ - Sierpi\'nski set $X$ with
+respect to $\calI$ iff
+$|X| = \kappa$ and $\forall_{A \in \calI} |A \cap X| < \kappa$.
+\end{definition}
 
 First, recall the classical definition of perfectly meager sets 
 (called also always of the first category sets):
@@ -352,7 +377,7 @@ and $\afcp_{\Hom} = [\cantor]^{\leq \omega}$.
 $\afcp_{G_1} \supseteq \afcp_{G_2}$.
   All inclusions are summarized in Fig. \ref{figure1}
 %%%%TODO: wyjasnic dlaczego ref jest tutaj jako 2, przeciez nie ma nigdzie figure 1!
-%%%% co jest grane?
+%%%% co sie dzieje?
 (where arrows denote inclusions).
 
 \begin{figure}[bth]
@@ -490,16 +515,9 @@ gives us immediately the implication $(2) \Rightarrow (1)$.
 Since $\kappa = \cof(\calI) = \cov(\calI)$
 and $\calI$ contains singletons we conclude that
 there exists a $\kappa$ - Sierpi\'nski set $X$ with
-respect to $\calI$, i.e. a set $X$ of size
-$\kappa$ such that
-  \[
-    \forall_{A \in \calI} |A \cap X| < \kappa.
-  \]
-
-
-
-Let $Q \in \perf$ be arbitrary.
-From our assumption $\neg (Em)_{\calI}$
+respect to $\calI$ (see Def. \ref{kappaSierp}).
+  Let $Q \in \perf$ be arbitrary.
+From the assumption $\neg (Em)_{\calI}$
 there exists a perfect set P
 such that $P \not\in \calI$ and
 $\forall_{g \in G} gQ \cap P \in \mgr(gQ)$.

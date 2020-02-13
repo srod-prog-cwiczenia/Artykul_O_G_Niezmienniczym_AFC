@@ -112,9 +112,9 @@
 \newcommand{\gdelta}{{\sf G}_{\delta}}
 
 %%%% Cardinal coefficients
-\newcommand{\cof}{{\it cof}}
-\newcommand{\cov}{{\it cov}}
-\newcommand{\non}{{\it non}}
+\newcommand{\cof}{\mathit{cof}}
+\newcommand{\cov}{\mathit{cov}}
+\newcommand{\non}{\mathit{non}}
 
 \newcommand{\cantor}{\ca}
 \newcommand{\ucrz}{UCR_0}
@@ -390,11 +390,12 @@ $\afcp_{G_1} \supseteq \afcp_{G_2}$.
 %                                                                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The following definition will be useful for the problems in this section.
+Let us define:
+%%%The following definition will be useful for the problems in this section.
 
 \begin{definition}
 \label{def_em}
-Let $\calI$ be a $\sigma$ - ideal of subsets of the space $\ca$.
+Suppose that $\calI$ is a $\sigma$ - ideal of subsets of the space $\ca$.
 
 We say that a group $G \leq \Hom$ {\it has the $(Em)_{\calI}$ property}\/
 iff there exists a perfect set $Q \in \perf$
@@ -428,14 +429,14 @@ $\afcg \seq \calI$.
 \proof
 
 Let $X \seq \ca$ be a set such that $X \not\in \calI$.
-From the definition of
-the notion $(Em)_{\calI}$ we get a perfect set $Q$ such that
+By the definition of
+the notion $(Em)_{\calI}$ there is a perfect set $Q$ such that
 for each closed $E \not\in \calI$ we have
 $\exists_{g \in G} E \cap gQ \not\in \mgr(gQ)$.
 
 Let $F \seq \ca$ be an $F_{\sigma}$ set
 such that $X \seq F$.
-We have that
+We have
 $$F = \bigcup_{ \nlto } F_n$$
 where $cl(F_n) = F_n$ , so there exists $n_0 < \omega$
 such that $F_{n_0} \not\in \calI$.
@@ -554,14 +555,14 @@ under weaker set theoretical assumptions?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   For any $\calF \subseteq \Perf$ 
-let us define the following useful cardinal coefficient:
+let us define the following cardinal coefficient:
 \begin{definition}
 $Em(\calF, G) = \min\{|\calG|\colon \calG\subseteq \Perf \wedge 
 \forall_{P\in\calF} \exists{g\in G} \exists_{Q\in\calG} gQ \subseteq P\}$
 \end{definition}
 
   Let us formulate a characterization of the property 
-$(Em)$ in terms of previously defined coefficient.
+$(Em)$ using previously defined coefficient.
 
 Assume that $G$ has the property that for each $x\in\cantor$
 the orbit $Gx$ is dense in $\cantor$.
@@ -620,7 +621,7 @@ $(2)\to(1)$.
 \end{proof}
 
  
-  Below we give an useful characterization of the
+  Next we give an useful characterization of the
 property $(Em)_{\neglig}$.
 
 \medskip

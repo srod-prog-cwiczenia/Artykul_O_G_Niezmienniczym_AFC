@@ -312,7 +312,12 @@ respect to $\calI$ iff
 $|X| = \kappa$ and $\forall_{A \in \calI} |A \cap X| < \kappa$.
 \end{definition}
 
-First, recall the classical definition of perfectly meager sets 
+  Notice that if $\calT$ is a $\sigma$-ideal (which contains singletons)
+and $\kappa = \cof(\calI) = \cov(\calI)$ then
+there exists a $\kappa$ - Sierpi\'nski set $X$ with
+respect to $\calI$.
+
+  Recall the classical definition of perfectly meager sets 
 (called also always of the first category sets):
 \begin{definition}
 A set $X$ of $\cantor$ is a perfectly meager ($\afc$) set
@@ -338,12 +343,18 @@ category set in the topology of $P$.
    Notice that the notion $\afcp$ is a strengthening of the 
  classical perfectly meager sets.
 
-  Let us recall the following definition:
+  The following notion was first defined by Karel Prikry:
+(see \cite{C}, introduction):
 \begin{definition}
   A set $X\seq\ca$ is called \underline{strongly meager}
 (SFC) iff for every measure zero set $A\seq\ca$, there exists $t\in\ca$,
 such that $(X + t) \cap A = \emptyset$.
 \end{definition}
+
+  Notice that K.Prikry conjectured that the collection of strongly meager sets form
+a $\sigma$-ideal and that it is consistent that the strongly meager sets are exactly the
+countable sets. 
+
 
   It is known (see for example \cite{NSW}),
 that $\afcp \seq \afc$ and every Sierpi\'nski set is an $\afcp$ set.
@@ -539,9 +550,7 @@ $X =
   \big[ (P+C) \cap X \big]$.
 
 Since $\ca \setminus (P + C) \in \calI$ we obtain
-
-\[ | [ \ca \setminus (P + C) ] \cap X | < \kappa. \]
-
+$ | [ \ca \setminus (P + C) ] \cap X | < \kappa. $
 Moreover, if $c \in C$ and $g \in G$, then
 $hQ \cap P \in \mgr(hQ)$,
 where $h \in G$ is defined by $h(x) = g(x) - c$.
@@ -870,6 +879,12 @@ thus all assumptions of Theorem \ref{em<=>afcg->i} are satisfied.
 \bibitem{BJ} T. Bartoszy\'nski, H. Judah, \textit{Set Theory: on the
 strucure of the real line}, A. K. Peters, Wellesley, Mass., 1995.
 
+\bibitem{C} T.J. Carlson
+ \textit{Strong Measure Zero and Strongly Meager Sets}
+{\bbbf Proceedings of The American Mathematical Society} 118, No 2
+%%%(June 1993)
+, 577 - 586.
+
 \bibitem{N} A. Nowik
 \textit{Remarks about transitive version of perfectly
 meager sets,} {\bbbf Real Analysis Exchange} 22(1) (1996/97) 406 - 412.
@@ -882,7 +897,8 @@ meager sets,} {\bbbf Real Analysis Exchange} 22(1) (1996/97) 406 - 412.
 \bibitem{NW1} A. Nowik, T. Weiss
 \textit{Not every Q - set is perfectly meager in the transitive sense.}
 {\bbbf Proceedings of The American Mathematical Society} 128(496), No 10
-(October 2000), 3017 - 3024.
+%%%(October 2000)
+, 3017 - 3024.
 
 \bibitem{NW2} A. Nowik, T. Weiss
 \textit{Not every Q - set is perfectly meager in the transitive sense.}
